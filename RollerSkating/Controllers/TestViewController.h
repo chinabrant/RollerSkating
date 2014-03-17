@@ -12,4 +12,5 @@
 - (IBAction)loginClicked:(id)sender;
 - (IBAction)signupButtonClicked:(id)sender;
 
+- (IBAction)sendStatusClicked:(id)sender;
 @end

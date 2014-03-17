@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5805CFA518D6FE29006AD797 /* StatusManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5805CFA418D6FE29006AD797 /* StatusManager.m */; };
 		58190B7418C9A27F002ECE97 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58190B7218C9A27F002ECE97 /* RegisterViewController.m */; };
 		58190B7518C9A27F002ECE97 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58190B7318C9A27F002ECE97 /* RegisterViewController.xib */; };
 		58190B7818C9A638002ECE97 /* CommonFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 58190B7718C9A638002ECE97 /* CommonFunction.m */; };
@@ -47,6 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5805CFA318D6FE29006AD797 /* StatusManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusManager.h; sourceTree = "<group>"; };
+		5805CFA418D6FE29006AD797 /* StatusManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusManager.m; sourceTree = "<group>"; };
 		58190B7118C9A27F002ECE97 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
 		58190B7218C9A27F002ECE97 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 		58190B7318C9A27F002ECE97 /* RegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
@@ -218,6 +221,8 @@
 			children = (
 				58190B7618C9A638002ECE97 /* CommonFunction.h */,
 				58190B7718C9A638002ECE97 /* CommonFunction.m */,
+				5805CFA318D6FE29006AD797 /* StatusManager.h */,
+				5805CFA418D6FE29006AD797 /* StatusManager.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -337,6 +342,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				58190B7418C9A27F002ECE97 /* RegisterViewController.m in Sources */,
+				5805CFA518D6FE29006AD797 /* StatusManager.m in Sources */,
 				5822211618B5D880006D71D0 /* AppDelegate.m in Sources */,
 				58190B7818C9A638002ECE97 /* CommonFunction.m in Sources */,
 				5822214418B5D9A1006D71D0 /* BaseViewController.m in Sources */,
@@ -464,7 +470,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/wusj/Desktop/iOS\\ Demo/RollerSkating/RollerSkating/OpenCode",
+					"/Users/wusj/Desktop/iOS-Demo/RollerSkating/RollerSkating/OpenCode",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RollerSkating/RollerSkating-Prefix.pch";
@@ -482,7 +488,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/wusj/Desktop/iOS\\ Demo/RollerSkating/RollerSkating/OpenCode",
+					"/Users/wusj/Desktop/iOS-Demo/RollerSkating/RollerSkating/OpenCode",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RollerSkating/RollerSkating-Prefix.pch";

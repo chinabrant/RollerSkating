@@ -9,6 +9,7 @@
 #import "TestViewController.h"
 #import <AVOSCloudSNS/AVOSCloudSNS.h>
 #import "RegisterViewController.h"
+#import "LoginViewController.h"
 
 @interface TestViewController ()
 
@@ -47,7 +48,12 @@
 }
 
 - (IBAction)signupButtonClicked:(id)sender {
-    RegisterViewController *registerVC = [[RegisterViewController alloc] init];
+    LoginViewController *registerVC = [[LoginViewController alloc] init];
     [self.navigationController pushViewController:registerVC animated:YES];
 }
+
+- (IBAction)sendStatusClicked:(id)sender {
+    AVUser *user = [AVUser currentUser];
+}
+
 @end
