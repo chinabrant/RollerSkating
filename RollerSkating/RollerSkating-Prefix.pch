@@ -15,5 +15,6 @@
     #import <Foundation/Foundation.h>
     #import <AVOSCloud/AVOSCloud.h>
     #import <AVOSCloudSNS/AVOSCloudSNS.h>
+    #import <AVOSCloudSNS/AVUser+SNS.h>
     #import "CommonFunction.h"
 #endif

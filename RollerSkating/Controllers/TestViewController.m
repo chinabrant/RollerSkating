@@ -10,6 +10,7 @@
 #import <AVOSCloudSNS/AVOSCloudSNS.h>
 #import "RegisterViewController.h"
 #import "LoginViewController.h"
+#import <AVOSCloudSNS/AVUser+SNS.h>
 
 @interface TestViewController ()
 
@@ -39,10 +40,23 @@
 }
 
 - (IBAction)loginClicked:(id)sender {
-    [AVOSCloudSNS setupPlatform:AVOSCloudSNSSinaWeibo withAppKey:@"3410250485" andAppSecret:@"31071e68b7e9b3e5711e2c198ee36ce1" andRedirectURI:@"https://api.weibo.com/oauth2/default.html"];
-    
+    [AVOSCloudSNS setupPlatform:AVOSCloudSNSSinaWeibo withAppKey:@"2475282962" andAppSecret:@"c69d0a819aec269a65194a5d363812c6" andRedirectURI:@"http://www.yurengame.com"];
+
     [AVOSCloudSNS loginWithCallback:^(id object, NSError *error) {
-        //you code here
+        //
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if (object) {
+                [AVUser loginWithAuthData:object block:^(AVUser *user, NSError *error) {
+                    
+                    //返回AVUser
+                }];
+                NSLog(@"新浪微博登录成功");
+            } else {
+                NSLog(@"新浪微博登录失败");
+            }
+        });
+        
+        
     } toPlatform:AVOSCloudSNSSinaWeibo];
     
 }

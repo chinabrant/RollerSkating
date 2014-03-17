@@ -7,7 +7,7 @@
 		<dict>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>sinaweibosso.3410250485</string>
+				<string>sinaweibosso.2475282962</string>
 			</array>
 			<key>CFBundleURLName</key>
 			<string></string>
@@ -16,7 +16,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
-	<string>轮滑</string>
+	<string>我爱轮滑</string>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIdentifier</key>

@@ -26,15 +26,15 @@
 		5822212918B5D880006D71D0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5822212718B5D880006D71D0 /* InfoPlist.strings */; };
 		5822212B18B5D880006D71D0 /* RollerSkatingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5822212A18B5D880006D71D0 /* RollerSkatingTests.m */; };
 		5822214418B5D9A1006D71D0 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5822214318B5D9A1006D71D0 /* BaseViewController.m */; };
-		5822214618B5E527006D71D0 /* AVOSCloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5822214518B5E527006D71D0 /* AVOSCloud.framework */; };
 		5822214818B5E563006D71D0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5822214718B5E563006D71D0 /* SystemConfiguration.framework */; };
 		5822214A18B5E569006D71D0 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5822214918B5E569006D71D0 /* MobileCoreServices.framework */; };
 		5822214C18B5E573006D71D0 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5822214B18B5E573006D71D0 /* CoreTelephony.framework */; };
 		5822215018B5E635006D71D0 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5822214E18B5E635006D71D0 /* TestViewController.m */; };
 		5822215118B5E635006D71D0 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5822214F18B5E635006D71D0 /* TestViewController.xib */; };
-		5822215318B5E81B006D71D0 /* AVOSCloudSNS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5822215218B5E81B006D71D0 /* AVOSCloudSNS.framework */; };
 		5822215518B5E9E9006D71D0 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5822215418B5E9E9006D71D0 /* CoreLocation.framework */; };
 		5822215718B5EE3E006D71D0 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5822215618B5EE3E006D71D0 /* CFNetwork.framework */; };
+		61946EF618D73412009E89A9 /* AVOSCloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61946EF418D73412009E89A9 /* AVOSCloud.framework */; };
+		61946EF718D73412009E89A9 /* AVOSCloudSNS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61946EF518D73412009E89A9 /* AVOSCloudSNS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,16 +76,16 @@
 		5822212A18B5D880006D71D0 /* RollerSkatingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RollerSkatingTests.m; sourceTree = "<group>"; };
 		5822214218B5D9A1006D71D0 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		5822214318B5D9A1006D71D0 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
-		5822214518B5E527006D71D0 /* AVOSCloud.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AVOSCloud.framework; sourceTree = "<group>"; };
 		5822214718B5E563006D71D0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		5822214918B5E569006D71D0 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		5822214B18B5E573006D71D0 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		5822214D18B5E635006D71D0 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		5822214E18B5E635006D71D0 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		5822214F18B5E635006D71D0 /* TestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
-		5822215218B5E81B006D71D0 /* AVOSCloudSNS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AVOSCloudSNS.framework; sourceTree = "<group>"; };
 		5822215418B5E9E9006D71D0 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		5822215618B5EE3E006D71D0 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		61946EF418D73412009E89A9 /* AVOSCloud.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AVOSCloud.framework; sourceTree = "<group>"; };
+		61946EF518D73412009E89A9 /* AVOSCloudSNS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AVOSCloudSNS.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +97,12 @@
 				5822215518B5E9E9006D71D0 /* CoreLocation.framework in Frameworks */,
 				5822214C18B5E573006D71D0 /* CoreTelephony.framework in Frameworks */,
 				5822214A18B5E569006D71D0 /* MobileCoreServices.framework in Frameworks */,
+				61946EF718D73412009E89A9 /* AVOSCloudSNS.framework in Frameworks */,
 				5822214818B5E563006D71D0 /* SystemConfiguration.framework in Frameworks */,
 				5822210818B5D880006D71D0 /* CoreGraphics.framework in Frameworks */,
 				5822210A18B5D880006D71D0 /* UIKit.framework in Frameworks */,
 				5822210618B5D880006D71D0 /* Foundation.framework in Frameworks */,
-				5822215318B5E81B006D71D0 /* AVOSCloudSNS.framework in Frameworks */,
-				5822214618B5E527006D71D0 /* AVOSCloud.framework in Frameworks */,
+				61946EF618D73412009E89A9 /* AVOSCloud.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,8 +230,8 @@
 		5822213618B5D8E0006D71D0 /* OpenCode */ = {
 			isa = PBXGroup;
 			children = (
-				5822215218B5E81B006D71D0 /* AVOSCloudSNS.framework */,
-				5822214518B5E527006D71D0 /* AVOSCloud.framework */,
+				61946EF418D73412009E89A9 /* AVOSCloud.framework */,
+				61946EF518D73412009E89A9 /* AVOSCloudSNS.framework */,
 			);
 			path = OpenCode;
 			sourceTree = "<group>";
@@ -471,6 +471,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/wusj/Desktop/iOS-Demo/RollerSkating/RollerSkating/OpenCode",
+					"/Users/sjwu/我的项目/RollerSkating/RollerSkating/OpenCode",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RollerSkating/RollerSkating-Prefix.pch";
@@ -489,6 +490,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/wusj/Desktop/iOS-Demo/RollerSkating/RollerSkating/OpenCode",
+					"/Users/sjwu/我的项目/RollerSkating/RollerSkating/OpenCode",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RollerSkating/RollerSkating-Prefix.pch";
