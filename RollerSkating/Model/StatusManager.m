@@ -7,6 +7,7 @@
 //
 
 #import "StatusManager.h"
+#import <AVOSCloud/AVQuery.h>
 
 @implementation StatusManager
 
@@ -39,6 +40,19 @@
     AVStatus *status = [[AVStatus alloc] init];
     status.data = @{@"text" : message};
     [AVStatus sendStatusToFollowers:status andCallback:callback];
+}
+
+- (void)getTimelineStatus {
+//    AVStatusQuery *query=[AVStatus inboxQuery:kAVStatusTypePrivateMessage];
+//    //限制50条
+//    query.limit=50;
+//    //限制1397这个messageId以前的, 如果不设置,默认为最新的
+//    query.maxId=1397;
+//    //需要同时附带发送者的数据
+//    [query includeKey:@"source"];
+//    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+//        //获得AVStatus数组
+//    }];
 }
 
 @end

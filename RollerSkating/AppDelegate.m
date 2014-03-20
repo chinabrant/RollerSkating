@@ -8,6 +8,10 @@
 
 #import "AppDelegate.h"
 #import "TestViewController.h"
+#import "HomeViewController.h"
+#import "AroundViewController.h"
+#import "MeViewController.h"
+#import "SJTabBarViewController.h"
 
 @implementation AppDelegate
 
@@ -19,9 +23,36 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     
-    TestViewController *test = [[TestViewController alloc] init];
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:test];
-    self.window.rootViewController = nav;
+//    TestViewController *test = [[TestViewController alloc] init];
+//    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:test];
+//    self.window.rootViewController = nav;
+    
+    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+    HomeViewController *home = [[HomeViewController alloc] init];
+    home.title = @"首页";
+    UINavigationController *homeNav = [[UINavigationController alloc] initWithRootViewController:home];
+    homeNav.title = @"首页";
+    UITabBarItem *homeItem = [[UITabBarItem alloc] initWithTitle:@"首页" image:[UIImage imageNamed:@"tabbar_home"] tag:100];
+    homeNav.tabBarItem = homeItem;
+    
+    AroundViewController *around = [[AroundViewController alloc] init];
+    around.title = @"附近";
+    UINavigationController *aroundNav = [[UINavigationController alloc] initWithRootViewController:around];
+    aroundNav.title = @"附近";
+    UITabBarItem *aroundItem = [[UITabBarItem alloc] initWithTitle:@"附近" image:[UIImage imageNamed:@"tabbar_around"] tag:100];
+    aroundNav.tabBarItem = aroundItem;
+    
+    MeViewController *me = [[MeViewController alloc] init];
+    me.title = @"我";
+    UINavigationController *meNav = [[UINavigationController alloc] initWithRootViewController:me];
+    UITabBarItem *meItem = [[UITabBarItem alloc] initWithTitle:@"我" image:[UIImage imageNamed:@"tabbar_user"] tag:100];
+    meNav.tabBarItem = meItem;
+    
+    [tabBarController setViewControllers:@[homeNav, aroundNav, meNav]];
+//    self.window.rootViewController = tabBarController;
+    
+    SJTabBarViewController *sj = [[SJTabBarViewController alloc] init];
+    self.window.rootViewController = sj;
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];

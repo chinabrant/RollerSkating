@@ -9,7 +9,12 @@
 #import "LoginViewController.h"
 #import "RegisterViewController.h"
 
-@interface LoginViewController ()
+
+@interface LoginViewController () {
+    CGRect labelFrame;
+    CGRect sinaFrame;
+    CGRect qqFrame;
+}
 
 @end
 
@@ -28,6 +33,32 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    labelFrame = self.topLabel.frame;
+    sinaFrame = self.sinaButton.frame;
+    qqFrame = self.qqButton.frame;
+    self.topLabel.y = self.view.size.height;
+    self.sinaButton.y = self.view.size.height;
+    self.qqButton.y = self.view.height;
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [UIView animateWithDuration:2 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
+        self.topLabel.frame = labelFrame;
+    } completion:^(BOOL finished) {
+        
+    }];
+    
+    [UIView animateWithDuration:2.4 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
+        self.sinaButton.frame = sinaFrame;
+    } completion:^(BOOL finished) {
+        
+    }];
+    
+    [UIView animateWithDuration:2.7 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
+        self.qqButton.frame = qqFrame;
+    } completion:^(BOOL finished) {
+        
+    }];
 }
 
 - (void)didReceiveMemoryWarning
@@ -54,6 +85,28 @@
 }
 
 - (IBAction)sinaButtonClicked:(id)sender {
+    [AVOSCloudSNS setupPlatform:AVOSCloudSNSSinaWeibo withAppKey:@"2475282962" andAppSecret:@"c69d0a819aec269a65194a5d363812c6" andRedirectURI:@"http://www.yurengame.com"];
+    
+    [AVOSCloudSNS loginWithCallback:^(id object, NSError *error) {
+        //
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if (object) {
+                [AVUser loginWithAuthData:object block:^(AVUser *user, NSError *error) {
+                    if (user) {
+                        NSLog(@"新浪微博登录成功");
+                        [self dismissViewControllerAnimated:YES completion:^{
+                            
+                        }];
+                    }
+                    //返回AVUser
+                }];
+                
+            } else {
+                NSLog(@"新浪微博登录失败");
+            }
+        });
+        
+    } toPlatform:AVOSCloudSNSSinaWeibo];
 }
 
 - (IBAction)qqButtonClicked:(id)sender {
