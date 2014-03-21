@@ -36,7 +36,7 @@
 }
 
 // 给关注用户发送一条时间线状态
-- (void)sendTimelineStatus:(NSString *)message withCallback:(AVBooleanResultBlock)callback {
++ (void)sendTimelineStatus:(NSString *)message withCallback:(AVBooleanResultBlock)callback {
     AVStatus *status = [[AVStatus alloc] init];
     status.data = @{@"text" : message};
     [AVStatus sendStatusToFollowers:status andCallback:callback];

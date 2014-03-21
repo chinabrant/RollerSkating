@@ -10,4 +10,6 @@
 
 @interface CommonFunction : NSObject
 
++ (CGFloat)getStringHeightWithFont:(UIFont *)font width:(CGFloat)width string:(NSString *)tstring;
+
 @end

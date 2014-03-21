@@ -7,7 +7,10 @@
 //
 
 #import "BaseViewController.h"
+#import "HomeCell.h"
 
-@interface HomeViewController : BaseViewController
+@interface HomeViewController : BaseViewController <UITableViewDataSource, UITableViewDelegate>
+
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end

@@ -11,6 +11,6 @@
 @interface StatusManager : NSObject
 
 + (StatusManager *)sharedManager;
-- (void)sendTimelineStatus:(NSString *)message withCallback:(AVBooleanResultBlock)callback;
++ (void)sendTimelineStatus:(NSString *)message withCallback:(AVBooleanResultBlock)callback;
 
 @end

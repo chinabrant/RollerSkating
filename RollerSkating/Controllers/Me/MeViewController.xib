@@ -9,6 +9,7 @@
                 <outlet property="backScrollView" destination="BzT-p9-dTs" id="7SG-On-PX7"/>
                 <outlet property="tableView" destination="5Dw-GR-lIr" id="k8Q-ZF-yDl"/>
                 <outlet property="topBackImageView" destination="IU7-I4-lAY" id="FKS-cc-yWm"/>
+                <outlet property="usernameLabel" destination="1kv-kU-8db" id="Z9E-t2-gvF"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
         </placeholder>
@@ -21,7 +22,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="IU7-I4-lAY">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="top_back_image" id="IU7-I4-lAY">
                             <rect key="frame" x="0.0" y="-100" width="320" height="400"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </imageView>
@@ -52,18 +53,25 @@
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="n8C-Vn-Sj8">
                                     <rect key="frame" x="190" y="51" width="46" height="30"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <state key="normal" title="溜丝">
+                                    <state key="normal" title="溜粉">
                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>
                                     <connections>
                                         <action selector="followerClicked:" destination="-1" eventType="touchUpInside" id="Uoq-Fl-2tF"/>
                                     </connections>
                                 </button>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="brant" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1kv-kU-8db">
+                                    <rect key="frame" x="119" y="11" width="181" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         </view>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default_head" id="OOm-d3-Yp6">
-                            <rect key="frame" x="39" y="70" width="64" height="64"/>
+                            <rect key="frame" x="39" y="80" width="64" height="64"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         </imageView>
                         <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="5Dw-GR-lIr">
@@ -81,5 +89,6 @@
     </objects>
     <resources>
         <image name="default_head" width="180" height="180"/>
+        <image name="top_back_image" width="175" height="175"/>
     </resources>
 </document>

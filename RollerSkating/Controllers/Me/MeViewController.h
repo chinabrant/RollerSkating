@@ -10,6 +10,7 @@
 
 @interface MeViewController : BaseViewController <UIScrollViewDelegate, UITableViewDataSource, UITableViewDelegate>
 
+@property (weak, nonatomic) IBOutlet UILabel *usernameLabel;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UIImageView *topBackImageView;
 @property (weak, nonatomic) IBOutlet UIScrollView *backScrollView;

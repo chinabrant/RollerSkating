@@ -25,8 +25,6 @@
 		580980D418DAE3AE00BCC07C /* MyTeamViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 580980D218DAE3AE00BCC07C /* MyTeamViewController.xib */; };
 		580980D718DAE57200BCC07C /* BaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 580980D618DAE57200BCC07C /* BaseNavigationViewController.m */; };
 		580980DA18DAF1E400BCC07C /* PopCoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 580980D918DAF1E400BCC07C /* PopCoverView.m */; };
-		58190B7418C9A27F002ECE97 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58190B7218C9A27F002ECE97 /* RegisterViewController.m */; };
-		58190B7518C9A27F002ECE97 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58190B7318C9A27F002ECE97 /* RegisterViewController.xib */; };
 		58190B7818C9A638002ECE97 /* CommonFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 58190B7718C9A638002ECE97 /* CommonFunction.m */; };
 		58190B7C18C9A938002ECE97 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58190B7A18C9A938002ECE97 /* LoginViewController.m */; };
 		58190B7D18C9A938002ECE97 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58190B7B18C9A938002ECE97 /* LoginViewController.xib */; };
@@ -46,10 +44,12 @@
 		5822214818B5E563006D71D0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5822214718B5E563006D71D0 /* SystemConfiguration.framework */; };
 		5822214A18B5E569006D71D0 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5822214918B5E569006D71D0 /* MobileCoreServices.framework */; };
 		5822214C18B5E573006D71D0 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5822214B18B5E573006D71D0 /* CoreTelephony.framework */; };
-		5822215018B5E635006D71D0 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5822214E18B5E635006D71D0 /* TestViewController.m */; };
-		5822215118B5E635006D71D0 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5822214F18B5E635006D71D0 /* TestViewController.xib */; };
 		5822215518B5E9E9006D71D0 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5822215418B5E9E9006D71D0 /* CoreLocation.framework */; };
 		5822215718B5EE3E006D71D0 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5822215618B5EE3E006D71D0 /* CFNetwork.framework */; };
+		58FE6A5918DBDF2D00F14F78 /* MyStatusesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58FE6A5718DBDF2D00F14F78 /* MyStatusesViewController.m */; };
+		58FE6A5A18DBDF2D00F14F78 /* MyStatusesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58FE6A5818DBDF2D00F14F78 /* MyStatusesViewController.xib */; };
+		58FE6A5D18DBE52C00F14F78 /* HomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 58FE6A5C18DBE52C00F14F78 /* HomeCell.m */; };
+		58FE6A5F18DBE53B00F14F78 /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58FE6A5E18DBE53B00F14F78 /* HomeCell.xib */; };
 		61946EF618D73412009E89A9 /* AVOSCloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61946EF418D73412009E89A9 /* AVOSCloud.framework */; };
 		61946EF718D73412009E89A9 /* AVOSCloudSNS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61946EF518D73412009E89A9 /* AVOSCloudSNS.framework */; };
 /* End PBXBuildFile section */
@@ -96,9 +96,6 @@
 		580980D618DAE57200BCC07C /* BaseNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationViewController.m; sourceTree = "<group>"; };
 		580980D818DAF1E400BCC07C /* PopCoverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopCoverView.h; sourceTree = SOURCE_ROOT; };
 		580980D918DAF1E400BCC07C /* PopCoverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopCoverView.m; sourceTree = SOURCE_ROOT; };
-		58190B7118C9A27F002ECE97 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
-		58190B7218C9A27F002ECE97 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
-		58190B7318C9A27F002ECE97 /* RegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 		58190B7618C9A638002ECE97 /* CommonFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonFunction.h; sourceTree = "<group>"; };
 		58190B7718C9A638002ECE97 /* CommonFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonFunction.m; sourceTree = "<group>"; };
 		58190B7918C9A938002ECE97 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
@@ -125,11 +122,14 @@
 		5822214718B5E563006D71D0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		5822214918B5E569006D71D0 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		5822214B18B5E573006D71D0 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
-		5822214D18B5E635006D71D0 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
-		5822214E18B5E635006D71D0 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
-		5822214F18B5E635006D71D0 /* TestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
 		5822215418B5E9E9006D71D0 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		5822215618B5EE3E006D71D0 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		58FE6A5618DBDF2D00F14F78 /* MyStatusesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyStatusesViewController.h; sourceTree = "<group>"; };
+		58FE6A5718DBDF2D00F14F78 /* MyStatusesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyStatusesViewController.m; sourceTree = "<group>"; };
+		58FE6A5818DBDF2D00F14F78 /* MyStatusesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyStatusesViewController.xib; sourceTree = "<group>"; };
+		58FE6A5B18DBE52C00F14F78 /* HomeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeCell.h; sourceTree = SOURCE_ROOT; };
+		58FE6A5C18DBE52C00F14F78 /* HomeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeCell.m; sourceTree = SOURCE_ROOT; };
+		58FE6A5E18DBE53B00F14F78 /* HomeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = SOURCE_ROOT; };
 		61946EF418D73412009E89A9 /* AVOSCloud.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AVOSCloud.framework; sourceTree = "<group>"; };
 		61946EF518D73412009E89A9 /* AVOSCloudSNS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AVOSCloudSNS.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -211,6 +211,9 @@
 				580980D018DAE3AE00BCC07C /* MyTeamViewController.h */,
 				580980D118DAE3AE00BCC07C /* MyTeamViewController.m */,
 				580980D218DAE3AE00BCC07C /* MyTeamViewController.xib */,
+				58FE6A5618DBDF2D00F14F78 /* MyStatusesViewController.h */,
+				58FE6A5718DBDF2D00F14F78 /* MyStatusesViewController.m */,
+				58FE6A5818DBDF2D00F14F78 /* MyStatusesViewController.xib */,
 			);
 			path = Team;
 			sourceTree = "<group>";
@@ -304,12 +307,6 @@
 				58085E5718D94CFE00478246 /* Home */,
 				5822214218B5D9A1006D71D0 /* BaseViewController.h */,
 				5822214318B5D9A1006D71D0 /* BaseViewController.m */,
-				5822214D18B5E635006D71D0 /* TestViewController.h */,
-				5822214E18B5E635006D71D0 /* TestViewController.m */,
-				5822214F18B5E635006D71D0 /* TestViewController.xib */,
-				58190B7118C9A27F002ECE97 /* RegisterViewController.h */,
-				58190B7218C9A27F002ECE97 /* RegisterViewController.m */,
-				58190B7318C9A27F002ECE97 /* RegisterViewController.xib */,
 				58190B7918C9A938002ECE97 /* LoginViewController.h */,
 				58190B7A18C9A938002ECE97 /* LoginViewController.m */,
 				58190B7B18C9A938002ECE97 /* LoginViewController.xib */,
@@ -354,6 +351,9 @@
 			children = (
 				580980D818DAF1E400BCC07C /* PopCoverView.h */,
 				580980D918DAF1E400BCC07C /* PopCoverView.m */,
+				58FE6A5B18DBE52C00F14F78 /* HomeCell.h */,
+				58FE6A5C18DBE52C00F14F78 /* HomeCell.m */,
+				58FE6A5E18DBE53B00F14F78 /* HomeCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -437,12 +437,12 @@
 				58190B7D18C9A938002ECE97 /* LoginViewController.xib in Resources */,
 				58085E6118D94D3100478246 /* AroundViewController.xib in Resources */,
 				5822211018B5D880006D71D0 /* InfoPlist.strings in Resources */,
-				5822215118B5E635006D71D0 /* TestViewController.xib in Resources */,
 				5822211818B5D880006D71D0 /* Images.xcassets in Resources */,
-				58190B7518C9A27F002ECE97 /* RegisterViewController.xib in Resources */,
 				580980D418DAE3AE00BCC07C /* MyTeamViewController.xib in Resources */,
 				580980BC18DA8D8D00BCC07C /* MeViewController.xib in Resources */,
 				58085E5C18D94D2100478246 /* HomeViewController.xib in Resources */,
+				58FE6A5F18DBE53B00F14F78 /* HomeCell.xib in Resources */,
+				58FE6A5A18DBDF2D00F14F78 /* MyStatusesViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,11 +463,12 @@
 			files = (
 				58085E6418D96B0200478246 /* SJTabBarViewController.m in Sources */,
 				580980D318DAE3AE00BCC07C /* MyTeamViewController.m in Sources */,
+				58FE6A5D18DBE52C00F14F78 /* HomeCell.m in Sources */,
 				580980D718DAE57200BCC07C /* BaseNavigationViewController.m in Sources */,
 				580980BF18DA912600BCC07C /* UIView+Positioning.m in Sources */,
-				58190B7418C9A27F002ECE97 /* RegisterViewController.m in Sources */,
 				5805CFA518D6FE29006AD797 /* StatusManager.m in Sources */,
 				580980DA18DAF1E400BCC07C /* PopCoverView.m in Sources */,
+				58FE6A5918DBDF2D00F14F78 /* MyStatusesViewController.m in Sources */,
 				5822211618B5D880006D71D0 /* AppDelegate.m in Sources */,
 				58190B7818C9A638002ECE97 /* CommonFunction.m in Sources */,
 				5822214418B5D9A1006D71D0 /* BaseViewController.m in Sources */,
@@ -477,7 +478,6 @@
 				58085E6018D94D3100478246 /* AroundViewController.m in Sources */,
 				58085E5B18D94D2100478246 /* HomeViewController.m in Sources */,
 				58190B7C18C9A938002ECE97 /* LoginViewController.m in Sources */,
-				5822215018B5E635006D71D0 /* TestViewController.m in Sources */,
 				5822211218B5D880006D71D0 /* main.m in Sources */,
 				580980CE18DAAF6400BCC07C /* SJTabBar.m in Sources */,
 				580980CA18DAAE6D00BCC07C /* ActivityViewController.m in Sources */,

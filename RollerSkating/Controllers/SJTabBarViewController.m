@@ -12,6 +12,7 @@
 #import "MeViewController.h"
 #import "ActivityViewController.h"
 #import "BaseNavigationViewController.h"
+#import "LoginViewController.h"
 
 @interface SJTabBarViewController () {
     UIView *tabBarView;
@@ -66,6 +67,8 @@
     [self setViewControllers:@[homeNav, aroundNav, activityNav, meNav]];
     
     [self createTabBar];
+    
+    
 }
 
 - (void)hideTabBar:(BOOL)hide {

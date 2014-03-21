@@ -7,7 +7,6 @@
 //
 
 #import "LoginViewController.h"
-#import "RegisterViewController.h"
 
 
 @interface LoginViewController () {
@@ -80,8 +79,8 @@
 }
 
 - (IBAction)registerButtonClicked:(id)sender {
-    RegisterViewController *rvc = [[RegisterViewController alloc] init];
-    [self.navigationController pushViewController:rvc animated:YES];
+//    RegisterViewController *rvc = [[RegisterViewController alloc] init];
+//    [self.navigationController pushViewController:rvc animated:YES];
 }
 
 - (IBAction)sinaButtonClicked:(id)sender {
@@ -93,10 +92,25 @@
             if (object) {
                 [AVUser loginWithAuthData:object block:^(AVUser *user, NSError *error) {
                     if (user) {
-                        NSLog(@"新浪微博登录成功");
-                        [self dismissViewControllerAnimated:YES completion:^{
-                            
-                        }];
+                        NSString *username = [object valueForKey:@"username"];
+                        NSString *imgUrl = [object valueForKey:@"avatar"];
+                        NSLog(@"新浪微博登录成功 username: %@ \n imageUrl : %@", username, imgUrl);
+                        if ([user valueForKey:@"nickname"] == nil) {
+                            [user setObject:username forKey:@"nickname"];
+                            [user saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+                                if (succeeded) {
+                                    [self dismissViewControllerAnimated:YES completion:^{
+                                        
+                                    }];
+                                }
+                            }];
+                        } else {
+                            [self dismissViewControllerAnimated:YES completion:^{
+                                
+                            }];
+                        }
+                        
+                        
                     }
                     //返回AVUser
                 }];
@@ -110,5 +124,43 @@
 }
 
 - (IBAction)qqButtonClicked:(id)sender {
+    [AVOSCloudSNS setupPlatform:AVOSCloudSNSQQ withAppKey:@"101044486" andAppSecret:@"5cfad0f7d97b6b2175f8431c9581e4f8" andRedirectURI:nil]; // @"http://www.yurengame.com"];
+    
+    [AVOSCloudSNS loginWithCallback:^(id object, NSError *error) {
+        //
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if (object) {
+                [AVUser loginWithAuthData:object block:^(AVUser *user, NSError *error) {
+                    if (user) {
+                        NSString *username = [object valueForKey:@"username"];
+                        NSString *imgUrl = [object valueForKey:@"avatar"];
+                        NSLog(@"QQ登录成功 username: %@ \n imageUrl : %@", username, imgUrl);
+                        if ([user valueForKey:@"nickname"] == nil) {
+                            [user setObject:username forKey:@"nickname"];
+                            [user saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+                                if (succeeded) {
+                                    [self dismissViewControllerAnimated:YES completion:^{
+                                        
+                                    }];
+                                }
+                            }];
+                        } else {
+                            [self dismissViewControllerAnimated:YES completion:^{
+                                
+                            }];
+                        }
+                        
+                        
+                    }
+                    //返回AVUser
+                }];
+                
+            } else {
+                NSLog(@"QQ登录失败");
+            }
+        });
+        
+    } toPlatform:AVOSCloudSNSQQ];
 }
+
 @end

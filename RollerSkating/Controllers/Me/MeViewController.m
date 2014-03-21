@@ -8,7 +8,9 @@
 
 #import "MeViewController.h"
 #import "UserManager.h"
+#import "StatusManager.h"
 #import "MyTeamViewController.h"
+#import "MyStatusesViewController.h"
 
 @interface MeViewController () {
 
@@ -31,14 +33,17 @@
 {
     [super viewDidLoad];
     
-    
-    self.topBackImageView.image = [UIImage imageNamed:@"test"];
+    self.topBackImageView.image = [UIImage imageNamed:@"top_back_image"];
     self.backScrollView.bounces = YES;
     self.backScrollView.contentSize = CGSizeMake(320, 600);
     self.backScrollView.delegate = self;
     
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
+    
+    self.usernameLabel.text = [[AVUser currentUser] objectForKey:@"nickname"];
+    
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -65,13 +70,17 @@
         UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
         cell.textLabel.text = @"我的轮滑队";
         return cell;
+    } else if (indexPath.section == 1) {
+        UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
+        cell.textLabel.text = @"设置";
+        return cell;
     }
     
     return nil;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+    return 2;
 }
 
 # pragma mark -
@@ -83,6 +92,25 @@
             MyTeamViewController *myTeam = [[MyTeamViewController alloc] init];
             myTeam.hideTabBar = YES;
             [self.navigationController pushViewController:myTeam animated:YES];
+            break;
+        }
+            
+        case 1: {
+//            [StatusManager sendTimelineStatus:@"一条测试状态,发一条长点的来测试一下换行效果，要再长一点，差不多了。。。" withCallback:^(BOOL succeeded, NSError *error) {
+//                if (succeeded) {
+//                    NSLog(@"发表成功");
+//                } else {
+//                    NSLog(@"状态发表失败");
+//                }
+//            }];
+            
+//            [UserManager followeeWithUserObjectID:@"53287319e4b0bb08e1878df0" andCallback:^(BOOL succeeded, NSError *error) {
+//                if (succeeded) {
+//                    NSLog(@"关注成功");
+//                } else {
+//                    NSLog(@"关注失败");
+//                }
+//            }];
             break;
         }
             
@@ -117,6 +145,9 @@
 
 // 我的发件箱
 - (IBAction)myStatusClicked:(id)sender {
+    MyStatusesViewController *myStatus = [[MyStatusesViewController alloc] init];
+    myStatus.hideTabBar = YES;
+    [self.navigationController pushViewController:myStatus animated:YES];
 }
 
 @end

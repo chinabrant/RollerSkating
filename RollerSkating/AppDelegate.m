@@ -7,11 +7,11 @@
 //
 
 #import "AppDelegate.h"
-#import "TestViewController.h"
 #import "HomeViewController.h"
 #import "AroundViewController.h"
 #import "MeViewController.h"
 #import "SJTabBarViewController.h"
+#import "LoginViewController.h"
 
 @implementation AppDelegate
 

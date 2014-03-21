@@ -1,19 +1,18 @@
 //
-//  MyTeamViewController.m
+//  MyStatusesViewController.m
 //  RollerSkating
 //
-//  Created by wusj on 14-3-20.
+//  Created by wusj on 14-3-21.
 //  Copyright (c) 2014年 brant. All rights reserved.
 //
 
-#import "MyTeamViewController.h"
+#import "MyStatusesViewController.h"
 
-
-@interface MyTeamViewController ()
+@interface MyStatusesViewController ()
 
 @end
 
-@implementation MyTeamViewController
+@implementation MyStatusesViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,7 +26,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.title = @"我的轮滑队";
+    // Do any additional setup after loading the view from its nib.
+    [AVStatus getStatusesFromCurrentUserWithType:kAVStatusTypeTimeline skip:0 limit:10 andCallback:^(NSArray *objects, NSError *error) {
+        NSLog(@"statuses : %@", objects);
+    }];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
